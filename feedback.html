@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codes Cool — Seminar Feedback</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<header>
+    <div class="brand-shell">
+    <img class="brand-logo" src="logo.png" alt="Codes Cool — Coding School of Bhadrak">
+
+    <div class="header-title">
+        Seminar Feedback and Career Interest Form
+    </div>
+    </div>
+</header>
+
+<form id="feedbackForm">
+<div id="error" class="error"></div>
+
+<div class="section">
+<h2>1. Student Information</h2>
+<div class="grid">
+<div class="field"><label class="title">Full Name *</label><input name="fullName" required placeholder="Enter your full name"></div>
+<div class="field"><label class="title">Mobile Number *</label><input name="mobile" required type="tel" placeholder="Enter mobile number"></div>
+<div class="field"><label class="title">Email ID *</label><input name="email" required type="email" placeholder="Enter email address"></div>
+<div class="field"><label class="title">Department *</label><select name="department" required><option value="">Select department</option><option>CSE</option><option>IT</option><option>ECE</option><option>EEE</option><option>Mechanical</option><option>Civil</option><option>Other</option></select></div>
+</div>
+<div class="field">
+<label class="title">Year *</label>
+<select name="year" required>
+<option value="">Select year</option>
+<option value="1st Year">1st Year</option>
+<option value="2nd Year">2nd Year</option>
+<option value="3rd Year">3rd Year</option>
+<option value="Final Year">Final Year</option>
+</select>
+</div>
+</div>
+
+<div class="section">
+<h2>2. Seminar Feedback</h2>
+<div class="field"><label class="title">Overall Rating (1–5) *</label><div class="options rating">
+<label class="option"><input required type="radio" name="rating" value="1"><span>1 ⭐</span></label>
+<label class="option"><input type="radio" name="rating" value="2"><span>2 ⭐</span></label>
+<label class="option"><input type="radio" name="rating" value="3"><span>3 ⭐</span></label>
+<label class="option"><input type="radio" name="rating" value="4"><span>4 ⭐</span></label>
+<label class="option"><input type="radio" name="rating" value="5"><span>5 ⭐</span></label>
+</div></div>
+<div class="field"><label class="title">The seminar was easy to understand. *</label><div class="options">
+<label class="option"><input required type="radio" name="understanding" value="Strongly Agree"><span>Strongly Agree</span></label>
+<label class="option"><input type="radio" name="understanding" value="Agree"><span>Agree</span></label>
+<label class="option"><input type="radio" name="understanding" value="Neutral"><span>Neutral</span></label>
+<label class="option"><input type="radio" name="understanding" value="Disagree"><span>Disagree</span></label>
+</div></div>
+<div class="field"><label class="title">Which part did you like most?</label><div class="options">
+<label class="option"><input type="checkbox" name="liked" value="Live Coding"><span>Live Coding</span></label>
+<label class="option"><input type="checkbox" name="liked" value="Project"><span>Project</span></label>
+<label class="option"><input type="checkbox" name="liked" value="Career Guidance"><span>Career Guidance</span></label>
+<label class="option"><input type="checkbox" name="liked" value="Interaction"><span>Interaction</span></label>
+</div></div>
+<div class="field"><label class="title">Did the seminar increase your interest in programming? *</label><div class="options">
+<label class="option"><input required type="radio" name="programmingInterest" value="Yes"><span>Yes</span></label>
+<label class="option"><input type="radio" name="programmingInterest" value="No"><span>No</span></label>
+</div></div>
+</div>
+
+<div class="section">
+<h2>3. Codes Cool – Course Interest</h2>
+<div class="options">
+<label class="option"><input type="checkbox" name="courses" value="Python"><span>Python</span></label>
+<label class="option"><input type="checkbox" name="courses" value="Java"><span>Java</span></label>
+<label class="option"><input type="checkbox" name="courses" value="Web Development"><span>Web Development</span></label>
+<label class="option"><input type="checkbox" name="courses" value="Android"><span>Android</span></label>
+<label class="option"><input type="checkbox" name="courses" value="Spring / Django"><span>Spring / Django</span></label>
+<label class="option"><input type="checkbox" name="courses" value="C / C++"><span>C / C++</span></label>
+<label class="option"><input type="checkbox" name="courses" value="Not Interested"><span>Not Interested</span></label>
+</div></div>
+
+<div class="section">
+<h2>4. Internship &amp; Project</h2>
+<div class="field"><label class="title">Looking for Internship?</label><div class="options">
+<label class="option"><input type="checkbox" name="internship" value="Paid"><span>Paid</span></label>
+<label class="option"><input type="checkbox" name="internship" value="Unpaid"><span>Unpaid</span></label>
+<label class="option"><input type="checkbox" name="internship" value="Not Now"><span>Not Now</span></label>
+</div></div>
+<div class="field"><label class="title">Project Type</label><div class="options">
+<label class="option"><input type="checkbox" name="projectType" value="Mini"><span>Mini</span></label>
+<label class="option"><input type="checkbox" name="projectType" value="Major"><span>Major</span></label>
+<label class="option"><input type="checkbox" name="projectType" value="Final Year"><span>Final Year</span></label>
+<label class="option"><input type="checkbox" name="projectType" value="Live"><span>Live</span></label>
+<label class="option"><input type="checkbox" name="projectType" value="Certificate"><span>Certificate</span></label>
+</div></div>
+<div class="field"><label class="title">Preferred Domain</label><div class="options">
+<label class="option"><input type="checkbox" name="domain" value="Python"><span>Python</span></label>
+<label class="option"><input type="checkbox" name="domain" value="Java"><span>Java</span></label>
+<label class="option"><input type="checkbox" name="domain" value="Web"><span>Web</span></label>
+<label class="option"><input type="checkbox" name="domain" value="Android"><span>Android</span></label>
+<label class="option"><input type="checkbox" name="domain" value="ML"><span>ML</span></label>
+<label class="option"><input type="checkbox" name="domain" value="Any"><span>Any</span></label>
+</div></div>
+</div>
+
+<div class="section">
+<h2>5. Placement &amp; Career Support</h2>
+<div class="options">
+<label class="option"><input type="checkbox" name="support" value="Placement Training"><span>Placement Training</span></label>
+<label class="option"><input type="checkbox" name="support" value="Resume Building"><span>Resume Building</span></label>
+<label class="option"><input type="checkbox" name="support" value="Mock Interview"><span>Mock Interview</span></label>
+<label class="option"><input type="checkbox" name="support" value="Coding Practice"><span>Coding Practice</span></label>
+</div></div>
+
+<div class="section">
+<h2>6. Refer Friends / Relatives <span style="font-weight:400;font-size:12px;color:#777">(Optional)</span></h2>
+<div class="grid">
+<div class="field"><label class="title">Name</label><input name="refName" placeholder="Referral name"></div>
+<div class="field"><label class="title">Mobile No.</label><input name="refMobile" type="tel" placeholder="Referral mobile"></div>
+</div>
+<div class="field"><label class="title">Relationship</label><div class="options">
+<label class="option"><input type="radio" name="relationship" value="Friend"><span>Friend</span></label>
+<label class="option"><input type="radio" name="relationship" value="Classmate"><span>Classmate</span></label>
+<label class="option"><input type="radio" name="relationship" value="Junior"><span>Junior</span></label>
+<label class="option"><input type="radio" name="relationship" value="Relative"><span>Relative</span></label>
+</div></div>
+</div>
+
+<div class="section">
+<h2>Additional Feedback</h2>
+<div class="field"><label class="title">Any suggestions or comments?</label><textarea name="comments" placeholder="Tell us what you think..."></textarea></div>
+</div>
+
+<label class="consent"><input required type="checkbox" name="consent"><span>I agree to be contacted by Codes Cool for educational updates, internships, projects, and career guidance.</span></label>
+<button id="submitBtn" type="submit">Submit Feedback →</button>
+<div class="note">Your response will be securely sent to the Codes Cool Google Sheet.</div>
+</form>
+
+<div class="success" id="success"><div class="check">✓</div><h2>Thank You!</h2><p>Your feedback has been submitted successfully.</p></div>
+</div>
+<footer>© Codes Cool · Coding School of Bhadrak</footer>
+</div>
+
+<script>
+// ============================================================
+// GOOGLE SHEETS SETUP
+// 1. Create a Google Sheet.
+// 2. Open Extensions → Apps Script.
+// 3. Paste the Code.gs backend supplied with this project.
+// 4. Deploy it as a Web app and copy the /exec URL.
+// 5. Paste that URL below.
+// ============================================================
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyeUzn22CyC6NwgolfzlNWSPx13eb-YhFfMCYnvCEOOB2xFO0hx_aEM96Rx7hv-Ly17/exec";
+
+const form = document.getElementById("feedbackForm");
+const btn = document.getElementById("submitBtn");
+const errorBox = document.getElementById("error");
+const success = document.getElementById("success");
+
+function values(name) {
+  return [...form.querySelectorAll(`[name="${name}"]:checked`)].map(x => x.value).join(", ");
+}
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  errorBox.style.display = "none";
+
+  if (GOOGLE_SCRIPT_URL.includes("PASTE_YOUR")) {
+    errorBox.textContent = "Google Sheets is not connected yet. Add your Apps Script Web App URL in the HTML file first.";
+    errorBox.style.display = "block";
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = "Submitting…";
+
+  const payload = {
+    timestamp: new Date().toISOString(),
+    fullName: form.fullName.value.trim(),
+    mobile: form.mobile.value.trim(),
+    email: form.email.value.trim(),
+    department: form.department.value,
+    year: values("year"),
+    rating: values("rating"),
+    understanding: values("understanding"),
+    liked: values("liked"),
+    programmingInterest: values("programmingInterest"),
+    courses: values("courses"),
+    internship: values("internship"),
+    projectType: values("projectType"),
+    domain: values("domain"),
+    support: values("support"),
+    refName: form.refName.value.trim(),
+    refMobile: form.refMobile.value.trim(),
+    relationship: values("relationship"),
+    comments: form.comments.value.trim(),
+    consent: form.consent.checked ? "Yes" : "No"
+  };
+
+  try {
+    await fetch(GOOGLE_SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {"Content-Type":"text/plain;charset=utf-8"},
+      body: JSON.stringify(payload)
+    });
+
+    form.style.display = "none";
+    success.style.display = "block";
+    window.scrollTo({top:0,behavior:"smooth"});
+  } catch (err) {
+    errorBox.textContent = "Could not submit right now. Please check your internet connection and try again.";
+    errorBox.style.display = "block";
+    btn.disabled = false;
+    btn.textContent = "Submit Feedback →";
+  }
+});
+</script>
+</body>
+</html>

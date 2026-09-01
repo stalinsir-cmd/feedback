@@ -1,0 +1,379 @@
+*{
+  box-sizing:border-box;
+}
+
+:root{
+  --blue:#2457ff;
+  --blue-deep:#183fc9;
+  --black:#0b0b0b;
+  --soft:#eef3ff;
+  --ink:#102040;
+  --muted:#667085;
+  --line:#d9e2f2;
+  --panel:#f8faff;
+}
+
+html,
+body{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:"Segoe UI",Arial,sans-serif;
+  background:linear-gradient(135deg,#edf3ff 0%,#f4efff 100%);
+  color:var(--ink);
+  min-height:100vh;
+}
+
+.wrap{
+  max-width:1120px;
+  margin:0 auto;
+  padding:26px 0 45px;
+}
+
+.card{
+  max-width:806px;
+  margin:0 auto;
+  background:#fff;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 18px 45px rgba(38,61,120,.12);
+}
+
+/* ================= HEADER ================= */
+
+header{
+  background:#f7f9ff;
+  padding:34px 32px 0;
+  border-bottom:5px solid transparent;
+  border-image:linear-gradient(90deg,#2457ff,#3c4cff) 1;
+}
+
+.brand-shell{
+  display:flex;
+  align-items:center;
+  gap:55px;
+  padding:0;
+}
+
+.brand-logo{
+  display:block;
+  width:225px;
+  height:auto;
+  flex-shrink:0;
+}
+
+.header-title{
+  color:#2457ff;
+  font-size:28px;
+  line-height:1.25;
+  font-weight:900;
+  max-width:380px;
+}
+
+.kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:22px;
+  padding:7px 12px;
+  border-radius:20px;
+  background:#eaf0ff;
+  color:#1746db;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.04em;
+}
+
+.kicker::before{
+  content:"";
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#2457ff;
+}
+
+h1{
+  display:block;
+  margin:13px 0 8px;
+  color:#10244a;
+  font-size:28px;
+  line-height:1.2;
+  font-weight:900;
+  letter-spacing:-.5px;
+}
+
+.sub{
+  display:block;
+  margin:0 0 26px;
+  color:#667085;
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* ================= FORM ================= */
+
+form{
+  background:#fff;
+  padding:12px 28px 30px;
+}
+
+.section{
+  position:relative;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:17px;
+  padding:25px 22px 19px;
+  margin:18px 0 0;
+  box-shadow:0 4px 14px rgba(20,45,100,.025);
+}
+
+.section::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:17px;
+  bottom:17px;
+  width:4px;
+  border-radius:0 5px 5px 0;
+  background:#315bff;
+}
+
+.section h2{
+  margin:0 0 20px;
+  padding-left:2px;
+  color:#102d61;
+  font-size:16px;
+  font-weight:900;
+}
+
+/* ================= GRID ================= */
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px 16px;
+}
+
+.field{
+  margin-bottom:16px;
+}
+
+.field label.title{
+  display:block;
+  margin-bottom:8px;
+  color:#1d2d49;
+  font-size:13px;
+  font-weight:800;
+}
+
+/* ================= INPUTS ================= */
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:12px 12px;
+  border:1px solid #d5deed;
+  border-radius:10px;
+  background:#fff;
+  color:#17233d;
+  font-family:inherit;
+  font-size:13px;
+  outline:none;
+  transition:.2s ease;
+}
+
+input::placeholder,
+textarea::placeholder{
+  color:#8994a8;
+}
+
+input:hover,
+select:hover,
+textarea:hover{
+  border-color:#b8c8e5;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:var(--blue);
+  box-shadow:0 0 0 3px rgba(36,87,255,.10);
+}
+
+textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+/* ================= CHECKBOX / RADIO OPTIONS ================= */
+
+.options{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+}
+
+.option{
+  position:relative;
+}
+
+.option input{
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
+
+.option span{
+  display:inline-block;
+  padding:9px 13px;
+  border:1px solid #d5deed;
+  border-radius:9px;
+  background:#fff;
+  color:#35415a;
+  font-size:12px;
+  font-weight:600;
+  cursor:pointer;
+  transition:
+    background .18s ease,
+    border-color .18s ease,
+    color .18s ease,
+    transform .12s ease;
+}
+
+.option span:hover{
+  border-color:#7d9cff;
+  color:#1746db;
+  background:#f7f9ff;
+}
+
+.option span:active{
+  transform:scale(.98);
+}
+
+/* SELECTED = BLUE */
+
+.option input:checked + span{
+  background:var(--blue);
+  border-color:var(--blue);
+  color:#fff;
+  font-weight:800;
+  box-shadow:0 4px 10px rgba(36,87,255,.18);
+}
+
+/* ================= CONSENT ================= */
+
+.consent{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  margin-top:20px;
+  padding:14px 15px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#f6f8fc;
+  color:#59657a;
+  font-size:12px;
+  line-height:1.5;
+}
+
+.consent input{
+  width:auto;
+  margin-top:3px;
+}
+
+/* ================= BUTTON ================= */
+
+button{
+  width:100%;
+  margin-top:18px;
+  border:0;
+  border-radius:10px;
+  padding:14px 16px;
+  background:linear-gradient(135deg,#2457ff,#183fc9);
+  color:#fff;
+  font-family:inherit;
+  font-size:14px;
+  font-weight:900;
+  cursor:pointer;
+  box-shadow:0 9px 20px rgba(36,87,255,.25);
+  transition:.2s ease;
+}
+
+button:hover{
+  transform:translateY(-1px);
+  box-shadow:0 12px 24px rgba(36,87,255,.30);
+}
+
+button:active{
+  transform:translateY(0);
+}
+
+button:disabled{
+  opacity:.7;
+  cursor:not-allowed;
+  transform:none;
+}
+
+/* ================= NOTE / ERROR / SUCCESS ================= */
+
+.note{
+  margin-top:10px;
+  color:#8a93a5;
+  font-size:10px;
+  text-align:center;
+}
+
+.error{
+  display:none;
+  margin:0 0 12px;
+  padding:11px 12px;
+  border-radius:8px;
+  background:#fff1f2;
+  border:1px solid #ffd1d7;
+  color:#b42318;
+  font-size:13px;
+}
+
+.success{
+  display:none;
+  text-align:center;
+  padding:50px 20px 30px;
+  color:#111827;
+}
+
+.check{
+  width:68px;
+  height:68px;
+  margin:0 auto 14px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#e8f9ef;
+  color:#0e8d52;
+  font-size:30px;
+  font-weight:900;
+}
+
+.success h2{
+  margin:0 0 8px;
+  color:#111827;
+}
+
+.success p{
+  margin:0;
+  color:#475467;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  padding:18px 20px 22px;
+  background:#fff;
+  color:#8a93a5;
+  font-size:11px;
+  text-align:center;
+}
+
