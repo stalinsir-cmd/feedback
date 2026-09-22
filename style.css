@@ -370,10 +370,29 @@ button:disabled{
 /* ================= FOOTER ================= */
 
 footer{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
   padding:18px 20px 22px;
   background:#fff;
   color:#8a93a5;
   font-size:11px;
   text-align:center;
+}
+
+footer strong{
+  color:#1a2b4d;
+  font-weight:800;
+}
+
+footer a{
+  color:#2457ff;
+  text-decoration:none;
+  font-weight:700;
+}
+
+footer a:hover{
+  text-decoration:underline;
 }
 
